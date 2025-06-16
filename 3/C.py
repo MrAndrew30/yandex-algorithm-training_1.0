@@ -1,0 +1,12 @@
+N, M = map(int, input().split())
+s1 = set(int(input()) for _ in range(N))
+s2 = set(int(input()) for _ in range(M))
+t1 = s1 & s2
+t2 = s1.difference(t1)
+t3 = s2.difference(t1)
+print(len(t1))
+print(*sorted(t1))
+print(len(t2))
+print(*sorted(t2))
+print(len(t3))
+print(*sorted(t3))
